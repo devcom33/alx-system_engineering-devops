@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #Process and PID file
 
-termin() {
-  rm /var/run/myscript.pid
-  exit
+termin(){
+	rm /var/run/myscript.pid
+	exit
 }
 
 echo "$$" > /var/run/myscript.pid
