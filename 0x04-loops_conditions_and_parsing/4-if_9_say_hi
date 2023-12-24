@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# a Bash script that displays Best School 10 times, but for the 9th iteration, displays Best School and then Hi
+# a Bash script that displays Best School 10times, but for the 9th iteration, displays Best School and then Hi
 i=0
 while [ $i -le 9 ]
 do
