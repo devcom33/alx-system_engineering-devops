@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# a Bash script that displays Best School 10 times
+# a Bash script that displays Best School 10times
 i=0
 until [ $i -le 9 ]
 do
