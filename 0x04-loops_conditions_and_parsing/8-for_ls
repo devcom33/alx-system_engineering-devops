@@ -3,5 +3,5 @@
 
 for i in $(ls .)
 do
-	echo $i
+	echo $i | cut -d "-" -f2-
 done
