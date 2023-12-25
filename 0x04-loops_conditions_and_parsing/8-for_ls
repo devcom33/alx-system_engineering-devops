@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #a Bash script ls
 
-for i in $(ls)
+for i in $(ls .)
 do
 	echo $i
 done
