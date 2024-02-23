@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-""" a Bash script that displays all active IPv4 IPs on the machine it’s executed on."""
+#a Bash script that displays all active IPv4 IPs on the machine it’s executed on
 
 ips=$(ifconfig | grep -oP '(?<=inet\s)\d+\.\d+\.\d+\.\d+' | grep -v '127.0.0.1')
-
 echo "$ips"
