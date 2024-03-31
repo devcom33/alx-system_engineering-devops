@@ -7,7 +7,7 @@ import requests
 import sys
 
 
-if "__name__" == "__main__":
+if __name__ == "__main__":
     userId = sys.argv[1]
     user = requests.get('https://jsonplaceholder.typicode.com/users/{}'
                         .format(userId))
