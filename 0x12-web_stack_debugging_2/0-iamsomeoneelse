@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# A script that runs whoami under the user
+
+if [ "$#" -eq 1 ]; then
+	echo "$(whoami) $1"
+else
+	echo "Usage: $0 <argument>"
+	exit 1
+fi
