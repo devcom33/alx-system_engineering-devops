@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# nginx conf
+
+if ! id -u nginx &>/dev/null; then
+	useradd -s /sbin/nologin -r nginx
+fi
+sed -i 's/^user www-data;/user nginx;\nlisten 8080;/g' /etc/nginx/nginx.conf
+nginx -s reload
