@@ -2,7 +2,7 @@
 # A script that runs whoami under the user
 
 if [ "$#" -eq 1 ]; then
-	echo "$(whoami) $1"
+	sudo -u $1 whoami
 else
 	echo "Usage: $0 <argument>"
 	exit 1
